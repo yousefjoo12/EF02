@@ -15,8 +15,6 @@ namespace C42_G01_EF01.Context
 		{
 			optionsBuilder.UseSqlServer("Server = . ; Database = ITI02; Trusted_Connection = True ; Encrypt=false"); 
 		}
-		public DbSet<Stud_Course> Stud_Course { get; set; }
-		public DbSet<Coures_inst> Coures_inst { get; set; }
 		public DbSet<Department> Department { get; set; }
 		public DbSet<Instructor> Instructor { get; set; }
 		public DbSet<Topic> Topic { get; set; }
@@ -24,6 +22,8 @@ namespace C42_G01_EF01.Context
 		{
 			modelBuilder.ApplyConfiguration(new Config_Course());
 			modelBuilder.ApplyConfiguration(new Config_Student()); 
+			modelBuilder.ApplyConfiguration(new Config_CourseInst()); 
+			modelBuilder.ApplyConfiguration(new Config_StudCourse()); 
 		}
 	}
 }

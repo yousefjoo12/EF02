@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,10 @@ namespace C42_G01_EF01.Entities
 		public decimal Salary { get; set; }
 		public string Adress { get; set; }
 		public decimal HourRate { get; set; }
-		public int Dept_ID { get; set; }	
-		 
+		public int Dept_ID { get; set; }
+
+		[ForeignKey("DepartmentId")]
+		public Department Department { get; set; }
+
 	}
 }
