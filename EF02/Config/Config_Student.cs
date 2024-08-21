@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace EF02.Config
 {
-	internal class ConfigStudent : IEntityTypeConfiguration<Student>
+	internal class Config_Student : IEntityTypeConfiguration<Student>
 	{
 		public void Configure(EntityTypeBuilder<Student> builder)
 		{

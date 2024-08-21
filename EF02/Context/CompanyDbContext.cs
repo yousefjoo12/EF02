@@ -22,8 +22,8 @@ namespace C42_G01_EF01.Context
 		public DbSet<Topic> Topic { get; set; }
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.ApplyConfiguration(new ConfigCourse());
-			modelBuilder.ApplyConfiguration(new ConfigStudent()); 
+			modelBuilder.ApplyConfiguration(new Config_Course());
+			modelBuilder.ApplyConfiguration(new Config_Student()); 
 		}
 	}
 }
