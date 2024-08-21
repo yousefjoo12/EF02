@@ -13,10 +13,10 @@ namespace C42_G01_EF01.Entities
 	{
 
 		[Required] 
-		public int InstructorId { get; set; }
+		public int inst_ID { get; set; }
 
 		[Required] 
-		public int CourseId { get; set; }
+		public int Coures_ID { get; set; }
 
 		public string Evaluate { get; set; }
 

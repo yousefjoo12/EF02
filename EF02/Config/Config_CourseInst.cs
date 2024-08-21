@@ -17,7 +17,7 @@ namespace EF02.Config
 
 			builder.HasKey(Ci => new { Ci.inst_ID, Ci.Coures_ID });
 
-			builder.Property(ci => ci.evaluate)
+			builder.Property(ci => ci.Evaluate)
 				   .HasMaxLength(50);
 		}
 	}

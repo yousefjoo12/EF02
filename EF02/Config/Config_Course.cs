@@ -15,7 +15,7 @@ namespace EF02.Config
 		{
 			builder.ToTable("courses", "dbo");
 
-			builder.HasKey(c => c.ID);
+			builder.HasKey(c => c.Id);
 
 			builder.Property(c => c.Name)
 				   .IsRequired();
