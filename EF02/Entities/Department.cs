@@ -23,8 +23,8 @@ namespace C42_G01_EF01.Entities
 		public int Ins_ID { get; set; }
 
 		// Collection navigation 
-		public ICollection<Instructor> Instructors { get; set; } = new List<Instructor>();
+		public ICollection<Instructor> Instructors { get; set; } = new HashSet<Instructor>();
 
-		public ICollection<Student> Students { get; set; } = new List<Student>();
+		public ICollection<Student> Students { get; set; } = new HashSet<Student>();
 	}
 }
