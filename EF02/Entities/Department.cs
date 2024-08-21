@@ -12,11 +12,14 @@ namespace C42_G01_EF01.Entities
 	{
 		[Key]
 		public int ID { get; set; }
+
 		[Required]
 		[StringLength(100)]
 		public string Name { get; set; }
+
 		[Required]
 		public DateTime HiringDate { get; set; }
+	
 		public int Ins_ID { get; set; }
 
 		// Collection navigation 
